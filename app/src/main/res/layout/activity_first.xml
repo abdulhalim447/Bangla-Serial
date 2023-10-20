@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <!--AppBar Layout start here-->
+    <LinearLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#FF9800"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="20dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back_button"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--AppBar Layout end here-->
+
+
+    <!--Image slider start here-->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/smartSlider"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/appBar"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/smartSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="16dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="আপনি কি বাংলা সিরিয়াল এবং নাটকের ভক্ত?\n আপনি কি কোনো সাবস্ক্রিপশন ফি ছাড়াই আপনার প্রিয় Bangla Serial দেখতে চান? যদি হয় হ্যাঁ, তাহলে Bangla Serial অ্যাপ আপনার জন্য একটি নিখুঁত ও পারফেক্ট অ্যাপ!\n\n পরবর্তী বাটনে ক্লিক করুন।"
+
+                />
+
+            <Button
+                android:id="@+id/goToNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go to next"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/privacyPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="Privacy Policy"
+
+                />
+
+           <View
+               android:layout_width="100dp"
+               android:layout_height="1dp"
+               android:background="@color/black"
+
+               />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

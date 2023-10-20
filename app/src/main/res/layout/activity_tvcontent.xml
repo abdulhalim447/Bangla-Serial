@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63C8C3C3"
+    tools:context=".TVContent"
+    >
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:hint="Search..."
+        android:background="@drawable/searchview_background"
+        android:padding="10dp"/>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:horizontalSpacing="10dp"
+        android:isScrollContainer="false"
+        android:numColumns="2"
+        android:layout_below="@id/searchEditText"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item android:title="Task">
+            <menu>
+
+                <item
+                    android:id="@+id/kenoAdAse"
+                    android:icon="@drawable/baseline_snooze_24"
+                    android:title="কেন বিজ্ঞাপন আসে?" />
+
+                <item
+                    android:id="@+id/rate"
+                    android:icon="@drawable/rate_app"
+                    android:title="Rate App" />
+
+                <item
+                    android:id="@+id/bug"
+                    android:icon="@drawable/report_bug"
+                    android:title="Report a Bug" />
+
+                <item
+                    android:id="@+id/moreApp"
+                    android:icon="@drawable/more_app"
+                    android:title="More App" />
+
+            </menu>
+
+
+        </item>
+
+
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item android:title="More App">
+
+            <menu>
+                <item
+                    android:id="@+id/shareApp"
+                    android:icon="@drawable/share"
+                    android:title="Share App" />
+
+
+
+                <item
+                    android:id="@+id/disclaimer"
+                    android:icon="@drawable/copyright_logo"
+                    android:title="Disclaimer" />
+
+
+                <item
+                    android:id="@+id/policy"
+                    android:icon="@drawable/policy"
+                    android:title="Privacy Policy" />
+            </menu>
+
+
+        </item>
+
+
+    </group>
+
+
+</menu>
